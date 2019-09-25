@@ -59,7 +59,7 @@ for (let [index, element] of cardImages.entries()) {
 
     element.firstElementChild.style.backgroundColor = '#49c2dd';
     element.firstElementChild.firstElementChild.src =
-      '/img/logos/' + logos[index] + '.png';
+      'img/logos/' + logos[index] + '.png';
 
     element.firstElementChild.firstElementChild.style.transition =
       'all 2s ease';
@@ -82,7 +82,7 @@ for (let [index, element] of cardImages.entries()) {
     element.firstElementChild.firstElementChild.style.transform =
       'translate(-50%,-50%) scale(1)';
     element.firstElementChild.firstElementChild.src =
-      '/img/card-backgrounds/' + logos[index] + '.jpg';
+      'img/card-backgrounds/' + logos[index] + '.jpg';
   });
 
   element.addEventListener('click', () => {
