@@ -21,19 +21,15 @@ html {
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
   color: var(--light-color);
-  /* min-height: 100%; */
 }
 
 body {
   background-color: #262626;
   position: relative;
-  /* height: 100%; */
 }
 
 .main-container {
-  /* width: 80%; */
   margin: 0 auto;
-  /* height: 100%; */
   background-color: var(--secondary-background-color);
   position: relative;
   max-width: 1695px;
@@ -47,7 +43,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border-top: 2px solid var(--main-color); */
 }
 
 .main-header {
@@ -84,7 +79,9 @@ body {
   margin-top: 75px;
   width: 70%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 /* Siema carousell*/
@@ -165,7 +162,6 @@ body {
 .art {
   max-width: 90%;
   height: auto;
-  /* height: 80vh; */
 }
 
 .art-upper,
@@ -293,14 +289,14 @@ body {
   margin: 20px;
   flex: 1 1 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .img-container {
-  /* max-width: 300px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: var(--main-color);
   max-width: 470px;
   min-width: 300px;
   padding-top: 100%;
@@ -313,7 +309,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 100%;
+  width: 101%;
   height: auto;
   background-color: var(--main-color);
 }
@@ -326,13 +322,7 @@ body {
 .card:hover h3 {
   color: var(--main-color);
   background-color: var(--light-color);
-  /* border-top: 3px solid var(--main-color); */
 }
-/* .card:hover h3 {
-  color: var(--light-color);
-  background-color: var(--main-color);
-  border-top: 3px solid var(--light-color);
-} */
 
 h3 {
   color: var(--light-color);
@@ -366,8 +356,6 @@ h3 {
   display: block;
   opacity: 1;
 }
-
-/*Form*/
 
 .contact-form {
   width: 100%;
@@ -450,7 +438,6 @@ h3 {
   background-color: var(--main-color);
   color: var(--light-color);
   font-size: 2rem;
-  /* border-radius: 15px; */
   cursor: pointer;
   position: relative;
   outline: none;
@@ -465,7 +452,6 @@ h3 {
   position: absolute;
   left: 0;
   top: 0;
-  /* border-radius: 15px; */
   opacity: 1;
   transition: all 0.5s ease;
   z-index: -1;
@@ -508,13 +494,6 @@ h3 {
 
 .contact-form > .title {
   top: -1px;
-}
-
-@media screen and (max-width: 700px) {
-  /* .img-container {
-    max-width: 320px;
-    min-width: 200px;
-  } */
 }
 
 @media screen and (min-width: 500px) and (max-height: 1200px) {
@@ -595,10 +574,7 @@ h3 {
     display: block;
     width: 40px;
     height: 40px;
-
     border: none;
-    /* background-color: var(--light-color); */
-    /* border-radius: 50px; */
     cursor: pointer;
     outline: none;
   }
@@ -607,15 +583,11 @@ h3 {
     background: url('./img/navigation-icons/up.png') no-repeat center center;
     background-size: cover;
     margin-bottom: 20px;
-    /* right: 2%;
-    top: 1%; */
   }
 
   .down {
     background: url('./img/navigation-icons/down.png') no-repeat center center;
     background-size: cover;
-    /* right: 2%;
-    top: 5%; */
   }
 
   @keyframes blink {
@@ -668,14 +640,6 @@ h3 {
   }
   h3 {
     display: none;
-    /* width: auto;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 45px;
-    padding-left: 10px;
-    font-size: 2.5rem; */
   }
 
   .number {
@@ -690,21 +654,14 @@ h3 {
     height: auto;
     margin-bottom: 20px;
     margin: 0;
-    /* position: relative; */
     box-shadow: none;
   }
 
   .img-container {
     max-width: 100%;
-
-    /* width: 100%;
-  
-    border-bottom: 5px solid var(--main-color); */
   }
 
   .card-img {
-    /* display: block;
-    /* transition: all 1s; */
     width: 100%;
     height: auto;
     background-color: var(--main-color);
@@ -721,7 +678,6 @@ h3 {
   .art {
     max-width: 100%;
     height: 100vh;
-    /* height: 80vh; */
   }
 
   .art-upper,

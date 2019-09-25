@@ -28,7 +28,6 @@ const logos = [
   'biura-projektowe',
   'goc-communication',
   'stachnik'
-  // 'dpa'
 ];
 
 const cardImages = document.querySelectorAll('.card');
@@ -57,7 +56,7 @@ for (let [index, element] of cardImages.entries()) {
       element.firstElementChild.firstElementChild.style.width = 'auto';
     }
 
-    element.firstElementChild.style.backgroundColor = '#49c2dd';
+    // element.firstElementChild.style.backgroundColor = '#49c2dd';
     element.firstElementChild.firstElementChild.src =
       'img/logos/' + logos[index] + '.png';
 
@@ -76,7 +75,7 @@ for (let [index, element] of cardImages.entries()) {
       element.firstElementChild.firstElementChild.style.height = 'auto';
       element.firstElementChild.firstElementChild.style.width = '100%';
     }
-    element.firstElementChild.style.backgroundColor = '#000';
+    // element.firstElementChild.style.backgroundColor = '#000';
     element.firstElementChild.firstElementChild.style.transition =
       'transform .3s';
     element.firstElementChild.firstElementChild.style.transform =
@@ -136,21 +135,3 @@ window.addEventListener('scroll', () => {
     downButton.classList.remove('block-display');
   }
 });
-
-// mySwiper = new Swiper('.swiper-container', {
-//   // Optional parameters
-
-//   grabCursor: false,
-//   centeredSlides: true,
-//   slidesPerView: 1,
-//   loop: true,
-
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev'
-//   }
-
-//   //mySwiper.update();
-//   //mySwiper.slideTo
-// });
-// new Siema();
